@@ -1,0 +1,60 @@
+.resultCard {
+  display: flex;
+  margin-top: 1.5rem;
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
+    0 0px 0 1px rgb(10 10 10 / 2%);
+  color: #4a4a4a;
+  flex: 0 0 30%;
+  max-width: 30%;
+  width: 30%;
+  border-radius: 64px;
+  transition: 0.3s ease;
+}
+figure {
+  margin: 0;
+}
+.image-container {
+  width: 130px;
+  height: 130px;
+}
+.thumbNail {
+  height: 100%;
+  object-fit: none;
+  border-radius: 50%;
+}
+.album-title {
+  align-self: center;
+  padding: 0 0.5em;
+  font-size: 0.8em;
+}
+@media screen and (max-width: 1024px) {
+  .resultCard {
+    border-radius: 50px;
+  }
+  .image-container {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 930px) {
+  .resultCard {
+    flex: 0 0 45%;
+    max-width: 45%;
+    width: 45%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .resultCard {
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .result {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
