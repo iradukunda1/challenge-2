@@ -12,7 +12,7 @@ function App() {
 
   const onSearch = async (id) => {
     setIsLoading(true);
-    const results = await albumService.get(`/${id}/photos`);
+    const results = await albumService.get(`/${id}`);
     setIsLoading(false);
     setState((prevState) => {
       return { ...prevState, results: results };
